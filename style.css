@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -45,10 +45,14 @@ body {
   border-radius: 20px;
 }
 
+.basic__button svg {
+  vertical-align: middle;
+}
+
 .button {
   height: 40px;
-  border: none;
-  background-color: #f8f8f8;
+  border: 2px solid transparent;
+  background-color: transparent;
   white-space: nowrap;
   text-align: center;
   font-family: "TTLakes-Regular";
@@ -56,9 +60,10 @@ body {
   font-size: 16px;
 }
 
-.button:focus {
+.button:hover {
   border: 2px solid #b8ffec;
   border-radius: 6px;
+  background-color: white;
 }
 
 /*header*/
@@ -71,6 +76,10 @@ body {
 }
 
 /* Main */
+
+.main {
+  background-color: #f8f8f8;
+}
 
 /* Title */
 .title {
@@ -112,7 +121,7 @@ body {
   list-style: none;
   padding: 0;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   margin: 0;
   margin-left: 16px;
 }
@@ -188,6 +197,10 @@ ul.menu__list li {
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
+  .container {
+    max-width: 768px;
+  }
+
   .header__divider3 {
     display: none;
   }
@@ -229,6 +242,10 @@ ul.menu__list li {
 }
 
 @media (min-width: 1120px) {
+  .container {
+    max-width: 1120px;
+  }
+
   .header {
     display: none;
   }
