@@ -29,6 +29,7 @@ body {
   font-size: 16px;
   font-family: "TTLakes-Regular";
   margin: 0;
+  background-color: #f8f8f8;
 }
 
 .container {
@@ -73,12 +74,12 @@ body {
   align-items: center;
   padding: 15px;
   border-bottom: 1px solid #d9fff5;
+  background-color: #ffffff;
 }
 
 /* Main */
 
 .main {
-  background-color: #f8f8f8;
 }
 
 /* Title */
