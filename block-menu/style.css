@@ -40,6 +40,7 @@ body {
   height: 100vh;
   padding-left: 24px;
   background-color: #ffffff;
+  box-shadow: 16px 0 52px #0e185033;
 }
 .menu__header {
   display: flex;
