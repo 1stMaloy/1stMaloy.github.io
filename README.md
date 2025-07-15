@@ -1,1 +1,1 @@
-[https://1stmaloy.github.io/](https://github.com/1stMaloy/1stMaloy.github.io/tree/main/index.html)
+https://1stmaloy.github.io/
