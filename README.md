@@ -1,1 +1,1 @@
-https://1stmaloy.github.io/
+https://1stmaloy.github.io/services/
