@@ -131,16 +131,16 @@ body {
   border: solid 1px #eaeaea;
   border-radius: 6px;
   display: flex;
-  justify-content: space-between;
+  padding: 0 16px;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .brand {
-  margin-left: 16px;
+  margin-right: auto;
 }
 
 .swiper-item button {
-  margin-right: 16px;
 }
 
 .swipper__button {
@@ -171,8 +171,12 @@ body {
   z-index: 50;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .links {
+    display: none;
+  }
+
+  .main {
     display: none;
   }
 
@@ -181,7 +185,7 @@ body {
   }
 }
 
-@media (min-width: 321px) and (max-width: 1119px) {
+@media (min-width: 768px) and (max-width: 1119px) {
   .container {
     width: 768px;
     height: 322px;
