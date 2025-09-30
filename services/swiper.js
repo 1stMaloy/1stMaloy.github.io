@@ -4,7 +4,7 @@ window.onload = function () {
     direction: "horizontal",
     loop: true,
     spaceBetween: 16,
-    slidesPerView: 1.31,
+    slidesPerView: 1.32,
 
     // If we need pagination
     pagination: {
@@ -16,18 +16,18 @@ window.onload = function () {
   let btn = document.querySelector(".read-more-btn");
   let btnContent = document.querySelector(".read-more-btn-content");
   let down = document.querySelector(".down");
-  let containter = document.querySelector(".container");
+  let container = document.querySelector(".container");
 
   btn.addEventListener("click", function () {
     if (btnContent.textContent === "Показать все") {
       btnContent.textContent = "Скрыть";
       links.style.height = "auto ";
-      containter.style.height = "auto";
+      container.style.height = "auto";
       down.classList.add("downRotate");
     } else if ((btnContent.textContent = "Скрыть")) {
       btnContent.textContent = "Показать все";
       links.style.height = "170px";
-      containter.style.height = "322px";
+      container.style.height = "322px";
       down.classList.remove("downRotate");
     }
   });

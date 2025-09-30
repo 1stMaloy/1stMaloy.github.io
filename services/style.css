@@ -8,6 +8,12 @@
   src: url(fonts/TTLakes/TTLakes-Bold.woff);
 }
 
+:root {
+  --size-sm: 320px;
+  --size-md: 768px;
+  --size-lg: 1120px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -30,22 +36,21 @@ body {
   padding: 0;
   margin: 0;
 }
-.container {
+.services-wrapper {
   font-size: 16px;
   font-family: "TTLakes-Regular";
   width: 320px;
-  height: 234px;
   background-color: #f8f8f8;
 }
 
 /*title*/
-.title {
+.services__title {
   display: table;
   width: 100%;
   height: 80px;
   background: linear-gradient(to right, #f8f8f8, #ffffff);
 }
-.title__text {
+.title-text {
   margin: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -82,8 +87,11 @@ body {
 .read-more {
   display: inline-flex;
   height: 24px;
-  /* margin-left: 24px;
-  margin-bottom: 32px; */
+  background-color: #f8f8f8;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .read-more button {
@@ -113,6 +121,7 @@ body {
   width: 320px;
   height: 154px;
   background-color: #f8f8f8;
+  position: relative;
 }
 .swiper-wrapper {
   margin-top: 16px;
@@ -140,9 +149,6 @@ body {
   margin-right: auto;
 }
 
-.swiper-item button {
-}
-
 .swipper__button {
   width: 40px;
   height: 40px;
@@ -164,7 +170,7 @@ body {
   );
   width: 24px;
   height: 81px;
-  top: -7px;
+  top: 5px;
   position: absolute;
   left: 296px;
   opacity: 1;
@@ -183,10 +189,14 @@ body {
   .read-more {
     display: none;
   }
+
+  .technics {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
-  .container {
+  .services-wrapper {
     width: 768px;
     height: 322px;
   }
@@ -198,20 +208,19 @@ body {
     gap: 16px 24px;
   }
 
-  .container .swiper {
+  .services-wrapper .swiper {
     display: none;
   }
 }
 
 @media (min-width: 1120px) {
-  .container {
+  .services-wrapper {
     width: 1120px;
-    height: 322px;
   }
   .title {
     height: 56px;
   }
-  .container .swiper {
+  .services-wrapper .swiper {
     display: none;
   }
 
@@ -222,4 +231,39 @@ body {
   .links .links__items {
     width: 240px;
   }
+}
+
+/*TECHNICS*/
+
+.technics {
+}
+
+.technics__title {
+  margin: 0;
+}
+
+.technics__list {
+  display: flex;
+  height: 160px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 24px;
+  background-color: #f8f8f8;
+}
+
+.technics__item {
+  width: 240px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.technics__description {
+  align-self: start;
+  font-weight: bold;
+}
+
+.tecnnics__button {
+  align-self: end;
 }
