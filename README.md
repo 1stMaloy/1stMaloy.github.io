@@ -1,1 +1,1 @@
-https://1stmaloy.1stMaloy.github.io
+https://1stMaloy.github.io
